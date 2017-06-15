@@ -11,8 +11,12 @@ class Config():
         'sqlite:///' + os.path.join(basedir, 'data.sqlite')
     ARTICLES_PER_PAGE = 10
     COMMENTS_PER_PAGE = 6
-    SECRET_KEY = 'secret key to protect from csrf'
-    WTF_CSRF_SECRET_KEY = 'random key for form' # for csrf protection
+
+    # secret key to protect from csrf
+    SECRET_KEY = '3423b1ae50e311e7900ba45e60c4b8d1'
+
+    # random key for form
+    WTF_CSRF_SECRET_KEY = '1b2bd28750e311e7b75da45e60c4b8d1' # for csrf protection
     # Take good care of 'SECRET_KEY' and 'WTF_CSRF_SECRET_KEY', if you use the
     # bootstrap extension to create a form, it is Ok to use 'SECRET_KEY',
     # but when you use tha style like '{{ form.name.labey }}:{{ form.name() }}',
